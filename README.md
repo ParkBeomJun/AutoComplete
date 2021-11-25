@@ -1,8 +1,8 @@
 # React Card Rotate Swiper
-a react component to swipe element using rotate
+a react to search JS keyward using keyboard
 
 ## Demo
-![test](https://user-images.githubusercontent.com/62200250/143383443-2e505b39-f320-4a35-9666-1ceb1909e9ab.png)
+
 
 
 
@@ -10,73 +10,48 @@ a react component to swipe element using rotate
 ## Installation
 
 ```
-npm install --save react-card-rotate-swiper
+npm i react-auto-complete-text
 ```
 
 ## Usage
 ```
-import { CardSwiper } from "react-card-rotate-swiper";
+import AutoCompleteText from "./AutoCompleteTest";
+import "./App.css";
+import { Component } from "react";
 
-//...
-
-function App() {
-
-  const handleSwipe = (d) => {
-    //fill this your callback
-  };
-  
-  return (
-    <div className="App">
-      <CardSwiper
-        onSwipe={handleSwipe}
-        className={"swiper"}
-        contents={
-          //fill this your element
-          <Inner>
-            <img src={img1} alt="img"></img>
-          </Inner>
-        }
-      />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <AutoCompleteText />
+      </div>
+    );
+  }
 }
+
+export default App;
 ```
 
 ## Props
 
-### 1. contents
-- required
-- any
+### 1. item
+- JS keyward
 
-This prop means the contents you want to show.
+This prop means Javascript Keyward array
 
-### 2. onSwipe
-- optional
-- Function
+### 2. onTextChanged
+- value
+- regex
 
-If you want to do something after card swiping, then fill in this props like callback function
+text input value is use expression and express state
 
-### 3. className
-- optional
-- string
+### 3. suggestionSelected
+- setState
 
-If you want to give the classname of some style, this props do this
+input value insert state
 
-### 4. detectingSize
-- optional
-- number
-- default : 100
+### 4. renderSuggestions
+- suggestions
+- map
 
-The prop means the pixels to recognize wether you are swiping card <br/>
-If you swipe more than detectingSize pixels, then the component will think about direction<br/>
-
-First component give priority to "left" and "right". <br/>
-And after that, give next priority to "up" and "down" 
-
-### 5. throwLimit
-- optional
-- number
-- default : 3000
-
-This prop means the point of card disappearance <br/>
-If you give some number bigger than 3000, then the card will be throwed farther and faster
+selected value is mouse click and Auto complete
