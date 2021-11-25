@@ -2,7 +2,7 @@
 a react to search JS keyward using keyboard
 
 ## Demo
-https://user-images.githubusercontent.com/62200250/143394828-d8c199d4-b046-49d6-b6fa-3aa5aacb7e0b.mp4
+![test1](https://user-images.githubusercontent.com/62200250/143395141-17821fb1-0e6e-4f60-8620-19cb5b8f7427.gif)
 
 
 
