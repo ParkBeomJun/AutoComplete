@@ -1,4 +1,4 @@
-# React Card Rotate Swiper
+# React Javascript code auto completion
 a react to search JS keyward using keyboard
 
 ## Demo
